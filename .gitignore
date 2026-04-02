@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc.*
+examples/logs/
+logs/
+*.log
+*.jsonl
+*_progress.txt
+cvs_log.csv
+*.zip
