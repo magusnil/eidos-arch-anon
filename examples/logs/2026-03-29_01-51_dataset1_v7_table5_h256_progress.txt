@@ -1,0 +1,11 @@
+Epoch 1 | Batch 0/94 | Loss: 1.0986 | Acc: 36.72%
+Epoch 1 | Batch 50/94 | Loss: 1.0741 | Acc: 63.71%
+Epoch 2 | Batch 0/94 | Loss: 0.9522 | Acc: 68.75%
+Epoch 2 | Batch 50/94 | Loss: 0.7013 | Acc: 64.05%
+Epoch 3 | Batch 0/94 | Loss: 0.5639 | Acc: 64.06%
+Epoch 3 | Batch 50/94 | Loss: 0.5736 | Acc: 63.56%
+Epoch 4 | Batch 0/94 | Loss: 0.5635 | Acc: 62.50%
+Epoch 4 | Batch 50/94 | Loss: 0.4767 | Acc: 64.92%
+Epoch 5 | Batch 0/94 | Loss: 0.4855 | Acc: 67.97%
+Epoch 5 | Batch 50/94 | Loss: 0.5024 | Acc: 65.84%
+Epoch 6 | Batch 0/94 | Loss: 0.5401 | Acc: 58.59%

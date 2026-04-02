@@ -1,0 +1,121 @@
+{
+  "identity": {
+    "run_id": "2026-03-29_01-51_dataset1_v7_table5_h256",
+    "timestamp": "2026-03-29T01:51:47.511021",
+    "model_name": "Dataset1V7Table5Redo",
+    "params": 133683
+  },
+  "config": {
+    "model_name": "Dataset1V7Table5Redo",
+    "dataset": "dataset_1_v7",
+    "batch_size": 128,
+    "lr": 0.0003,
+    "epochs": 30,
+    "hidden_dim": 256,
+    "num_layers": 2,
+    "max_paths": 9,
+    "scorer_hidden": 64,
+    "scorer_mode": "modular_phase",
+    "matcher_mode": "geometric",
+    "matcher_collapse": "fold",
+    "optimizer": "FractalOptimizer",
+    "seed": 1337,
+    "params": 133683
+  },
+  "reproducibility": {
+    "seed": 1337,
+    "python_version": "3.10.7",
+    "platform": {
+      "system": "Windows",
+      "release": "10",
+      "version": "10.0.26200",
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+      "hostname": "TerminusProxy"
+    },
+    "notes": "Same numeric seed is not a cross-platform reproducibility guarantee. OS, device backend, kernel selection, and library version differences can change the realized run even when the seed matches.",
+    "torch": {
+      "version": "2.4.1+cu121",
+      "initial_seed": 1337,
+      "cuda_available": true,
+      "num_threads": 8,
+      "deterministic_algorithms": false,
+      "cudnn": {
+        "enabled": true,
+        "benchmark": false,
+        "deterministic": true
+      },
+      "cuda": {
+        "version": "12.1",
+        "device_count": 1,
+        "current_device": 0,
+        "device_name": "NVIDIA RTX A5000 Laptop GPU"
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0614,
+      "train_acc": 63.7,
+      "val_loss": 0.9512,
+      "val_acc": 63.97,
+      "gap_val_minus_train": 0.27
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7385,
+      "train_acc": 63.74,
+      "val_loss": 0.5919,
+      "val_acc": 63.9,
+      "gap_val_minus_train": 0.16
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.5467,
+      "train_acc": 63.69,
+      "val_loss": 0.5288,
+      "val_acc": 63.9,
+      "gap_val_minus_train": 0.21
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.5143,
+      "train_acc": 64.64,
+      "val_loss": 0.5162,
+      "val_acc": 65.03,
+      "gap_val_minus_train": 0.39
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.5066,
+      "train_acc": 65.3,
+      "val_loss": 0.5122,
+      "val_acc": 64.73,
+      "gap_val_minus_train": -0.57
+    }
+  ],
+  "timing": [
+    {
+      "epoch": 1,
+      "epoch_seconds": 140.58
+    },
+    {
+      "epoch": 2,
+      "epoch_seconds": 124.25
+    },
+    {
+      "epoch": 3,
+      "epoch_seconds": 124.2
+    },
+    {
+      "epoch": 4,
+      "epoch_seconds": 132.65
+    },
+    {
+      "epoch": 5,
+      "epoch_seconds": 167.51
+    }
+  ],
+  "outcome": {}
+}

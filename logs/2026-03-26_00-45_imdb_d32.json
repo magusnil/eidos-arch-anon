@@ -1,0 +1,37 @@
+{
+  "identity": {
+    "run_id": "2026-03-26_00-45_imdb_d32",
+    "timestamp": "2026-03-26T00:45:09.418745",
+    "model_name": "EidosProbableIMDB",
+    "params": 5654
+  },
+  "config": {
+    "model_name": "EidosProbableIMDB",
+    "d_model": 32,
+    "num_layers": 2,
+    "batch_size": 64,
+    "lr": 0.002,
+    "epochs": 1,
+    "params": 5654
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.7461,
+      "train_acc": 47.2,
+      "test_loss": 0.7332,
+      "test_acc": 50.0
+    }
+  ],
+  "timing": [
+    {
+      "epoch": 1,
+      "epoch_seconds": 9.92
+    }
+  ],
+  "outcome": {
+    "best_test_acc": 50.0,
+    "d_model": 32,
+    "wall_time": "12.34s"
+  }
+}

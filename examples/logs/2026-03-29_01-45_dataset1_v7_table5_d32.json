@@ -1,0 +1,108 @@
+{
+  "identity": {
+    "run_id": "2026-03-29_01-45_dataset1_v7_table5_d32",
+    "timestamp": "2026-03-29T01:45:56.214053",
+    "model_name": "Dataset1V7Table5Redo",
+    "params": 5557
+  },
+  "config": {
+    "model_name": "Dataset1V7Table5Redo",
+    "dataset": "dataset_1_v7",
+    "batch_size": 128,
+    "lr": 0.0003,
+    "epochs": 30,
+    "d_model": 32,
+    "num_layers": 2,
+    "num_paths": 9,
+    "matcher_mode": "geometric",
+    "matcher_collapse": "fold",
+    "norm_type": "modular",
+    "optimizer": "FractalOptimizer",
+    "seed": 1337,
+    "params": 5557
+  },
+  "reproducibility": {
+    "seed": 1337,
+    "python_version": "3.10.7",
+    "platform": {
+      "system": "Windows",
+      "release": "10",
+      "version": "10.0.26200",
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+      "hostname": "TerminusProxy"
+    },
+    "notes": "Same numeric seed is not a cross-platform reproducibility guarantee. OS, device backend, kernel selection, and library version differences can change the realized run even when the seed matches.",
+    "torch": {
+      "version": "2.4.1+cu121",
+      "initial_seed": 1337,
+      "cuda_available": true,
+      "num_threads": 8,
+      "deterministic_algorithms": false,
+      "cudnn": {
+        "enabled": true,
+        "benchmark": false,
+        "deterministic": true
+      },
+      "cuda": {
+        "version": "12.1",
+        "device_count": 1,
+        "current_device": 0,
+        "device_name": "NVIDIA RTX A5000 Laptop GPU"
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0995,
+      "train_acc": 33.81,
+      "val_loss": 1.1006,
+      "val_acc": 32.83,
+      "gap_val_minus_train": -0.97
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.0993,
+      "train_acc": 33.8,
+      "val_loss": 1.0997,
+      "val_acc": 32.83,
+      "gap_val_minus_train": -0.97
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.099,
+      "train_acc": 33.81,
+      "val_loss": 1.0997,
+      "val_acc": 32.83,
+      "gap_val_minus_train": -0.97
+    },
+    {
+      "epoch": 4,
+      "train_loss": 1.0982,
+      "train_acc": 33.8,
+      "val_loss": 1.0985,
+      "val_acc": 32.83,
+      "gap_val_minus_train": -0.97
+    }
+  ],
+  "timing": [
+    {
+      "epoch": 1,
+      "epoch_seconds": 39.92
+    },
+    {
+      "epoch": 2,
+      "epoch_seconds": 38.13
+    },
+    {
+      "epoch": 3,
+      "epoch_seconds": 64.94
+    },
+    {
+      "epoch": 4,
+      "epoch_seconds": 80.41
+    }
+  ],
+  "outcome": {}
+}

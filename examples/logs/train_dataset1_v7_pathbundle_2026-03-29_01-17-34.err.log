@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "T:\Github\eidos\public_release\examples\train_dataset1_v7_pathbundle.py", line 417, in <module>
+    main()
+  File "T:\Github\eidos\public_release\examples\train_dataset1_v7_pathbundle.py", line 402, in main
+    train_loss, train_acc = run_epoch(model, train_loader, criterion, optimizer, device, use_tqdm)
+  File "T:\Github\eidos\public_release\examples\train_dataset1_v7_pathbundle.py", line 298, in run_epoch
+    logits = model(x)
+  File "C:\Users\lilit\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\lilit\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "T:\Github\eidos\public_release\examples\train_dataset1_v7_pathbundle.py", line 263, in forward
+    bundle = self._score_and_prune(bundle, scorer)
+  File "T:\Github\eidos\public_release\examples\train_dataset1_v7_pathbundle.py", line 246, in _score_and_prune
+    scores = scorer(bundle)
+  File "C:\Users\lilit\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\lilit\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "T:\Github\eidos\public_release\examples\train_dataset1_v7_pathbundle.py", line 205, in forward
+    return self.net(x).squeeze(-1)
+  File "C:\Users\lilit\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\lilit\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "T:\Github\eidos\public_release\eidos_nn\layers\eidos_transform.py", line 486, in forward
+    x = layer(x)
+  File "C:\Users\lilit\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\lilit\AppData\Roaming\Python\Python310\site-packages\torch\nn\modules\module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "T:\Github\eidos\public_release\eidos_nn\layers\eidos_transform.py", line 323, in forward
+    rotated = self.apply_R5_rotation(x, plane_idx)
+  File "T:\Github\eidos\public_release\eidos_nn\layers\eidos_transform.py", line 215, in apply_R5_rotation
+    rotated_even_active = _rotate_contiguous_pairs(active_even, theta)
+  File "T:\Github\eidos\public_release\eidos_nn\layers\eidos_transform.py", line 50, in _rotate_contiguous_pairs
+    z = torch.view_as_complex(pairs)
+RuntimeError: Tensor must have a last dimension with stride 1

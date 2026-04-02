@@ -1,0 +1,184 @@
+{
+  "identity": {
+    "run_id": "2026-03-29_02-03_dataset1_v7_table5_h256",
+    "timestamp": "2026-03-29T02:03:59.206626",
+    "model_name": "Dataset1V7Table5Redo",
+    "params": 330291
+  },
+  "config": {
+    "model_name": "Dataset1V7Table5Redo",
+    "dataset": "dataset_1_v7",
+    "encoding": "ordered_byte_sequence_with_mask",
+    "max_bytes": 512,
+    "input_dim": 1024,
+    "batch_size": 128,
+    "lr": 0.0003,
+    "epochs": 30,
+    "hidden_dim": 256,
+    "num_layers": 2,
+    "max_paths": 9,
+    "scorer_hidden": 64,
+    "scorer_mode": "modular_phase",
+    "matcher_mode": "geometric",
+    "matcher_collapse": "fold",
+    "optimizer": "FractalOptimizer",
+    "seed": 1337,
+    "params": 330291
+  },
+  "reproducibility": {
+    "seed": 1337,
+    "python_version": "3.10.7",
+    "platform": {
+      "system": "Windows",
+      "release": "10",
+      "version": "10.0.26200",
+      "machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 141 Stepping 1, GenuineIntel",
+      "hostname": "TerminusProxy"
+    },
+    "notes": "Same numeric seed is not a cross-platform reproducibility guarantee. OS, device backend, kernel selection, and library version differences can change the realized run even when the seed matches.",
+    "torch": {
+      "version": "2.4.1+cu121",
+      "initial_seed": 1337,
+      "cuda_available": true,
+      "num_threads": 8,
+      "deterministic_algorithms": false,
+      "cudnn": {
+        "enabled": true,
+        "benchmark": false,
+        "deterministic": true
+      },
+      "cuda": {
+        "version": "12.1",
+        "device_count": 1,
+        "current_device": 0,
+        "device_name": "NVIDIA RTX A5000 Laptop GPU"
+      }
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5995,
+      "train_acc": 79.11,
+      "val_loss": 0.4043,
+      "val_acc": 84.43,
+      "gap_val_minus_train": 5.33
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.5372,
+      "train_acc": 86.33,
+      "val_loss": 1.0967,
+      "val_acc": 86.83,
+      "gap_val_minus_train": 0.5
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.9437,
+      "train_acc": 84.32,
+      "val_loss": 0.504,
+      "val_acc": 86.63,
+      "gap_val_minus_train": 2.32
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.316,
+      "train_acc": 87.78,
+      "val_loss": 0.2446,
+      "val_acc": 89.47,
+      "gap_val_minus_train": 1.69
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.2099,
+      "train_acc": 90.17,
+      "val_loss": 0.2002,
+      "val_acc": 90.43,
+      "gap_val_minus_train": 0.26
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.1817,
+      "train_acc": 90.77,
+      "val_loss": 0.1755,
+      "val_acc": 91.0,
+      "gap_val_minus_train": 0.23
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.1663,
+      "train_acc": 91.75,
+      "val_loss": 0.1637,
+      "val_acc": 91.23,
+      "gap_val_minus_train": -0.52
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.1493,
+      "train_acc": 92.65,
+      "val_loss": 0.139,
+      "val_acc": 93.67,
+      "gap_val_minus_train": 1.02
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.1353,
+      "train_acc": 94.39,
+      "val_loss": 0.13,
+      "val_acc": 94.03,
+      "gap_val_minus_train": -0.36
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.1199,
+      "train_acc": 95.17,
+      "val_loss": 0.1134,
+      "val_acc": 95.7,
+      "gap_val_minus_train": 0.53
+    }
+  ],
+  "timing": [
+    {
+      "epoch": 1,
+      "epoch_seconds": 136.35
+    },
+    {
+      "epoch": 2,
+      "epoch_seconds": 180.85
+    },
+    {
+      "epoch": 3,
+      "epoch_seconds": 144.1
+    },
+    {
+      "epoch": 4,
+      "epoch_seconds": 141.39
+    },
+    {
+      "epoch": 5,
+      "epoch_seconds": 133.13
+    },
+    {
+      "epoch": 6,
+      "epoch_seconds": 129.32
+    },
+    {
+      "epoch": 7,
+      "epoch_seconds": 134.33
+    },
+    {
+      "epoch": 8,
+      "epoch_seconds": 139.1
+    },
+    {
+      "epoch": 9,
+      "epoch_seconds": 141.88
+    },
+    {
+      "epoch": 10,
+      "epoch_seconds": 119.79
+    }
+  ],
+  "outcome": {}
+}

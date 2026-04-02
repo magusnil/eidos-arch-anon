@@ -1,0 +1,8 @@
+System profiler: T:\Github\eidos\public_release\examples\logs\train_dataset1_v7_pathbundle_2026-03-29_01-17-34.system.jsonl
+=== PATHBUNDLE CHOICE SCORER (V7, PUBLIC RELEASE) ===
+Train samples: 12000 | Val samples: 3000
+Device: cuda
+Batches/epoch: 94 | Batch size: 128
+Scorer: modular_phase | Matcher: canonical | Optimizer: adam
+
+Epoch 1/30
